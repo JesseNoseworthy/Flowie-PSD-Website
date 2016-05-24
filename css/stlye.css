@@ -1,0 +1,1294 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.1rem;
+	font-weight: 300;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* TOP NAV START */
+.topNav {
+	background: rgb(43,43,43);
+	height: 7vh;
+	width: 100%;
+    line-height: 1.2rem;
+}
+
+.headerLinksLeft {
+	width: 50%;
+	float: left;
+	padding-left: 20%;
+	text-align: left;
+}
+
+.headerLinksRight {
+	width: 50%;
+	float: right;
+	padding-right: 20%;
+	text-align: right;
+}
+
+.headerLinks li {
+	display: inline;
+	padding: 0 15px;
+}
+
+.headerLinks a {
+	text-decoration: none;
+	color: rgb(126, 126, 126);
+	font-weight: 300;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	transition: color 0.3s ease-in-out;
+}
+
+.headerLinks a:hover {
+	color: white;
+}
+/* TOP NAV END */
+/* TOP LOGO START */
+.logo {
+	width: 100%;
+	text-align: center;
+	padding: 1.5%;
+	border-bottom: 1.5px solid rgba(126, 126, 126, 0.1);
+}
+
+.logo img {
+	height: 40px;
+	width: auto;
+}
+/* TOP LOGO END */
+/* TOP NAVBAR START */
+.navbar {
+	width: 100%;
+	text-align: center;
+	padding: 1.5% 0;
+}
+
+.navbar li {
+	display: inline;
+	padding: 0 15px;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: black;
+	font-weight: 300;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	transition: color 0.5s ease-in-out;
+}
+
+.navbar a:hover {
+	color: rgb(163,163,163);
+}
+
+.fa-shopping-cart, .fa-search {
+	font-size: 1rem !important;
+}
+
+
+/* TOP NAVBAR END */
+/* HERO HEADER START */
+.heroHeader {
+	background-image: url("../Flowie-MainFiles/assets/plant_hero.jpeg");
+	background-size: cover;
+	background-position: center;
+	height: 575px;
+	width: 100%;
+}
+
+.heroHeader figure {
+	text-align: center;
+	padding: 5% 0;
+}
+
+.heroHeader img {
+	height: 275px;
+	width: auto;
+	margin-top: -1.5%;
+}
+
+.heroHeader h3 {
+	text-transform: uppercase;
+    text-align: center;
+    margin-top: -5%;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.35rem;
+    text-shadow: 0.9px 0.9px 5px black;
+}
+
+.heroButtons {
+	text-align: center;
+}
+
+#viewProducts {
+    background: rgb(42, 42, 42);
+    color: white;
+    border: none;
+    height: 45px;
+    width: 15%;
+    text-transform: uppercase;
+    line-height: 45px;
+    letter-spacing: 0.1rem;
+    transition: background 0.5s ease-in-out;
+}
+
+#viewProducts:hover {
+	background: rgb(10, 10, 10);
+}
+
+#seeAll {
+    background: rgb(211, 229, 77);
+    border: none;
+    height: 45px;
+    width: 10%;
+    text-transform: uppercase;
+    line-height: 45px;
+    letter-spacing: 0.1rem;
+    transition: background 0.5s ease;
+}
+
+#seeAll:hover {
+	background: #B5C53E;
+}
+/* HERO HEADER END */
+/* INTRO CONTENT START */
+
+.introContent {
+    margin: 0 15% 5% 15%;
+}
+
+#introText h1, 
+.featuredText h1, 
+.arrivalText h1, 
+.blogIntro h1, 
+.aboutIntroHeader h2, 
+.getInTouch h2  {
+	text-align: center;
+	font-weight: 300;
+	padding-top: 4%;
+	font-size: 1.8rem;
+}
+
+#introText h6 {
+	font-weight: 400;
+	text-align: center;
+	color: rgb(163,163,163);
+	margin-top: -0.75%;
+}
+
+.introImages {
+	width: calc(33.3% - 24px);
+	margin: 12px;
+	float: left;
+}
+
+.introImages h5 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: -1%;
+    letter-spacing: 0.15rem;
+}
+
+/* INTRO CONTENT END */
+/* FEATURED CONTENT START */
+.featured {
+	height: 1000px;
+	background: rgb(241, 241, 241);
+}
+
+.featuredWrapper {
+	margin: 0 15% 8% 15%;
+}
+
+.featuredList {
+	text-decoration: none;
+	color: black;
+	font-weight: 300;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	padding-left: 0;
+	text-align: center;
+}
+
+.featuredList li {
+	display: inline;
+	padding: 0 15px;
+}
+
+.featuredList a {
+	text-decoration: none;
+	color: rgb(163,163,163);
+	transition: color 0.5s ease-in-out;
+}
+
+.featuredList a:hover {
+	color: black;
+}
+/* FEATURED CONTENT IMAGES START */
+.featuredRectangleLeft {
+	width: 464px;
+	margin: 10px;
+	float: left;
+	min-width: 464px;
+}
+
+.featuredRectangle {
+	width: calc(50% - 20px);
+	margin: 10px;
+	float: left;
+	position: relative;
+}
+
+#recType, #recPrice {
+	position: absolute;
+	font-weight: 300;
+}
+
+#recType {
+    top: 53%;
+    left: 0;
+    text-align: center;
+    font-weight: 500;
+    padding: 0 20px;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+#recPrice {
+	width: 100%;
+	top: 65%;
+	left: 0;
+	text-align: center;
+	color: rgb(163,163,163);
+}
+
+.featuredButton {
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: none;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	font-weight: 500;
+	transition: all 0.5s ease-in-out;
+}
+
+.featuredButton:hover {
+	background: rgb(116, 166, 92);
+	color: white;
+	font-weight: 300;
+}
+
+.featuredRectangleRight {
+	width: calc(100% - 464px - 20px - 30px);
+	margin: 10px;
+	float: left;
+	border: 5px solid white;
+	padding: 50px 50px 34% 50px;
+	margin-top: 20px;
+}
+
+.featuredRectangleRight h1 {
+	font-weight: 300;
+	line-height: 2.6rem;
+}
+
+#bestWishes {
+	color: rgb(93, 154, 56);
+	font-weight: 400;
+}
+
+.featuredRectangleRight p {
+    font-size: 0.75rem;
+    color: rgb(163,163,163);
+    line-height: 1.3rem;
+    letter-spacing: 0.055rem;
+}
+
+#more {
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	font-weight: 500;
+	margin-top: 12%;
+}
+
+#more a {
+	text-decoration: none;
+	color: black;
+	padding-left: 10px;
+	letter-spacing: 0.2rem;
+	transition: color 0.3s ease-in-out;
+}
+
+#more:before {
+    content: '';
+    width: 50px;
+    height: 1.5px;
+    position: relative;
+    float: left;
+    top: 12px;
+    display: block;
+    background: #80a05d;
+}
+
+#more a:hover {
+	color: rgb(116, 166, 92);
+}
+
+#groupPlants {
+   position: absolute;
+   right: 0%;
+   top: 240%;
+   width: 38%;
+   height: auto;
+}
+/* FEATURED CONTENT IMAGES END */
+/* FEATURED CONTENT END */
+/* NEW ARRIVALS START */
+.newArrivals {
+	margin: 5% 15% 8% 15%;
+}
+	
+.arrivalTop {
+	width: 100%;
+}
+
+.arrivalImageTop {
+	width: 50%;
+	float: left;
+	padding-right: 20px;
+}
+
+.arrivalImage {
+	width: 25%;
+/* 	width: calc(25% - 20px); */
+/* 	margin: 0 10px; */
+	float: left;
+}
+
+.arrivalBottom {
+	clear: both;
+}
+
+/* .bottomOne {
+	margin-left: 0;
+}
+ */
+/* NEW ARRIVALS END */
+/* MID IMAGE START */
+
+.midImage {
+    height:50vh;
+    background: url('../Flowie-MainFiles/assets/plants_wide.jpeg') center center no-repeat;
+    background-size: cover;
+}
+.midImage img {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding: 6% 0;
+}
+
+/* MID IMAGE END */
+
+/* BLOG START */
+.blog {
+	margin: 0 12% 5% 12%;
+}
+
+.blogLeft, .blogRight {
+	width: calc(50% - 30px);
+	padding: 0 15px;
+	float: left;
+}
+
+.date {
+	width: calc(33% - 10px);
+	padding: 5px;
+	float: left;
+}
+
+.blogText, .date {
+	margin-top: -3%;
+}
+
+.blogText {
+	width: 66.6%;
+	height: 30%;
+	padding: 5px;
+	float: right;
+}
+
+.blogText h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0rem;
+    line-height: 1.5rem;
+}
+
+.blogText h6 {
+	margin: 0;
+	font-weight: 400;
+	color: rgb(123, 196, 91);
+	font-size: 0.7rem;
+	margin-top: -4%;
+}
+
+.blogText p {
+	font-size: 0.8rem;
+	letter-spacing: 0.075rem;
+	color: rgb(134,134,134);
+}
+
+/* BLOG DATE START */
+.date {
+	position: relative;
+}
+
+.dateDay {
+	position: absolute;
+	color: rgb(233, 233, 233);
+    z-index: -1;
+    font-size: 8.5rem;
+    top: -120%;
+    letter-spacing: -0.2rem;
+}
+
+.date h4 {
+	font-size: 1.2rem;
+    margin-top: 37%;
+    width: 110%;
+	text-align: center;
+	color: rgb(105, 161, 89);
+	letter-spacing: 0.175rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* BLOG DATE END */
+/* BLOG END */
+/* PREFOOTER/VINTAGE START */
+
+.vintage {
+    background: rgb(241, 241, 241);
+    height: 20vh;
+}
+
+.vintageWrapper {
+	margin: 0 12%;
+}
+
+.vintageImage {
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	width: 20%;
+	padding: 20px;
+	margin: 3% 0;
+}
+
+.vintageImage img {
+	height: 40px;
+	width: auto;
+}
+
+/* PREFOOTER/VINTAGE END */
+/* FOOTER START */
+/* FOOTER ABOUT START */
+footer {
+	background-image: url("../Flowie-MainFiles/assets/footer_bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    padding-bottom: 30px;
+}
+
+.footerWrapper {
+	margin: 0 12%;
+}
+
+footer h2 {
+	margin: 0;
+	color: white;
+	padding-bottom: 15px;
+	font-weight: 500;
+	border-bottom: 0.5px solid rgba(131, 131, 131, 0.25);
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.footerAbout, .footerInformation, .footerSubscribe {
+	width: 33.3%;
+	padding: 20px 35px;
+	float: left;
+	text-align: center;
+}
+
+.footerAbout img {
+	width: 130px;
+	height: auto;
+	padding-top: 15px;
+}
+
+.footerAbout p,  .footerSubscribe p {
+	color: rgb(131, 131, 131);
+	font-size: 0.65rem;
+}
+
+.socialIcons a {
+	color: white;
+}
+
+.fa-twitter {
+	opacity: 0.1;
+}
+
+/* FOOTER ABOUT END */
+/* FOOTER INFO START */
+
+.footerInformation ul {
+	padding: 0;
+}
+
+.footerInformation li {
+	list-style-type: none;
+}
+
+.footerInformation a {
+	text-decoration: none;
+	color: rgb(131, 131, 131);
+	font-size: 0.65rem;
+	transition: background 0.3s ease-in;
+}
+
+.footerInformation a:hover {
+	color: white;
+}
+
+/* FOOTER INFO END */
+/* FOOTER SUBSCRIBE START */
+
+.footerSubscribe p {
+	padding-top: 15px;
+	margin: 0 30px;
+}
+
+.footerSubscribe input {
+	width: 100%;
+	height: 4.5vh;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 0.75rem;
+}
+
+.footerSend {
+	margin-top: 15px;
+	font-size: 0.7rem;
+	height: 4.5vh;
+	width: 40%;
+	background: rgb(211, 229, 77);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	color: rgb(42, 42, 42);
+	text-transform: uppercase;
+	transition: background 0.3s ease-in;
+}
+
+.footerSend:hover {
+	background: #B5C53E;
+}
+
+/* FOOTER SUBSCRIBE END */
+/* FOOTER END */
+
+/* ******************** */
+/* HOME PAGE ENDS HERE */
+/* ****************** */
+
+/* ***************** */
+/* ABOUT PAGE START */
+/* *************** */
+
+/* ABOUT US HEADER START */
+
+.aboutIntroHeader {
+	background: linear-gradient(rgba(116, 166, 92, 0.7), rgba(116, 166, 92, 0.7)), url('../Flowie-MainFiles/assets/plants_wide.jpeg');
+	background-size: cover;
+	background-position: 50% 15%;
+	height: 30vh;
+}
+
+.aboutIntroHeader h2 {
+	padding-top: 6%;
+	color: white;
+}
+
+/* ABOUT US HEADER END */
+/* ABOUT FLAG START */
+
+.aboutFlag {
+	border-bottom: 0.5px solid rgba(42, 42, 42, 0.1);
+}
+
+.aboutFlagWrapper {
+	margin: 0 15%;
+	height: 9vh;
+	line-height: 9vh;
+}
+
+.aboutFlag p {
+	font-size: 0.8rem;
+	text-transform: lowercase;
+	color: rgba(0,0,0,0.7);
+}
+
+.fa-arrow-right {
+	font-size: 0.6rem !important;
+}
+/* ABOUT FLAG END */
+/* ABOUT FULL FRAME START */
+
+.aboutFullFrame {
+	margin: 7vh 15% 0 15%;
+	background-image: url("../Flowie-MainFiles/assets/girl_tree.jpeg");
+	height: 594px;
+	position: relative;
+}
+
+.aboutFullFrame h2 {
+	background: white;
+	width: 65%;
+	height: auto;
+	font-weight: 100;
+	color: rgb(116, 166, 92);
+	text-transform: capitalize;
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	padding: 20px;
+}
+
+/* ABOUT FULL FRAME END */
+/* PROMO CONTENT START */
+.promo {
+	margin: 0 15%;
+}
+
+.promoContent {
+	height: 400px;
+	background: rgb(245, 245, 245);
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding: 8.5% 0;
+	transition: all .3s ease;
+}
+
+.delivery {
+	background-image: url(../Flowie-MainFiles/assets/bg_logo_left.png);
+}
+
+.discounts {
+	background-image: url(../Flowie-MainFiles/assets/bg_logo_right.jpg);
+	background-size: contain;
+	background-position-y: 110%;
+	background-repeat: no-repeat;
+}
+
+.promoContent h2 {
+	font-weight: 400;
+	font-size: 1.15rem;
+	color: rgb(116, 166, 92);
+}
+
+.promoContent p {
+	font-size: 0.8rem;
+	margin: 0 10px;
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: 400;
+}
+
+.promoContent:hover  {
+	background: linear-gradient(rgba(211, 229, 77, 0.7), rgba(211, 229, 77, 0.7)), url('../Flowie-MainFiles/assets/hover_image.jpeg');
+	background-size: cover;
+	background-position: 40% 0%;
+}
+
+.promoContent:hover h2, .promoContent:hover p {
+	color: white;
+	font-weight: 300;
+}
+/* PROMO CONTENT END */
+/* MID QUOTE HERO START */
+
+.midHero {
+	margin-top: 5%;
+	width: 100%;
+	height: 55vh;
+	background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url('../Flowie-MainFiles/assets/flower_pots.jpeg');
+	background-size: cover;
+	background-position: 50% 70%;
+}
+
+.midHero h2 {
+	text-align: center;
+	padding-top: 10%;
+	font-weight: 200;
+	width: 65%;
+	margin: 0 auto;
+	color: white;
+	font-style: italic;
+	text-transform: capitalize;
+	text-shadow: 1px 1px 5px black;
+}
+
+.attribution {
+	text-align: center;
+	margin-top: 1.5%;
+}
+
+.attribution h3 {
+	text-transform: uppercase;
+	color: white;
+	background: rgba(0,0,0,0.8);
+	display: inline;
+	padding: 2px 17px;
+	font-weight: 200;
+	letter-spacing: 0.25rem;
+	margin-top: 2%;
+}
+
+.attribution h5 {
+	color: white;
+	font-weight: 200;
+	margin-top: 0.6%;
+	text-shadow: 1px 1px 5px black;
+}
+
+/* MID QUOTE HERO END */
+/* FOLLOW START */
+
+.follow {
+	position: relative;
+}
+
+.followImages img {
+	width: calc(100% / 8);
+	float: left;
+}
+
+.instagramFollow h2 {
+	position: absolute;
+	background: rgb(37, 37, 37);
+	color: white;
+	font-weight: 200;
+	font-size: 0.75rem;
+	padding: 5px 14px;
+	margin: 0;
+	top: 0;
+	left: 17%;
+}
+
+.instagramAddress h2 {
+	position: absolute;
+	background: rgb(211, 229, 77);
+	font-weight: 200;
+	font-size: 0.75rem;
+	padding: 5px 14px;
+	margin: 0;
+	bottom: 0;
+	right: 17%;
+	text-transform: lowercase;
+}
+/* FOLLOW END */
+
+
+/* ********************* */
+/* ABOUT PAGE ENDS HERE */
+/* ******************* */
+
+/* ******************* */
+/* CONTACT PAGE START */
+/* ***************** */
+
+/* HERO GARDEN PHOTO START */
+.heroGarden {
+	margin: 0 13%;
+	height: 90vh;
+	background: url('../Flowie-MainFiles/assets/garden-way.jpg');
+	background-size: cover;
+	position: relative;
+}
+/* HERO GARDEN PHOTO END */
+/* CONTACT INFORMATION START */
+
+.contactInfoWrapper {
+	width: 90%;
+	margin: 0 5%;
+	position: absolute;
+	bottom: 0;
+}
+.contactInformationLinks {
+	background: white;
+	width: 33.3%;
+	float: left;
+	height: 27vh;
+	text-align: center;
+	padding-top: 3.5%;
+}
+
+.contactEmail::after {
+    content: "";
+    height: 100px;
+    width: 0.5px;
+    background: rgba(0,0,0,0.15);
+    position: absolute;
+    top: 31px;
+    left: 35%;
+}
+
+ .contactPhone::after {
+	content: "";
+	height: 100px;
+	width: 0.3px;
+	background: rgba(0,0,0,0.1);
+	position: absolute;
+	top: 31px;
+	left: 64%;
+
+ }
+
+.contactInformationLinks h6 {
+	font-size: 0.7rem;
+	font-weight: 500;
+	letter-spacing: 0.075rem;
+}
+
+.contactEmail a {
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s ease-in;
+}
+
+.contactEmail a:hover {
+	color: rgb(116, 116, 116);
+}
+/* CONTACT INFORMATION END */
+/* FINAL CONTACT START */
+.finalContact {
+	margin: 5% 13% 10% 13%;
+	padding: 0;
+}
+
+.map img {
+	height: 480px;
+	width: auto;
+	float: left;
+}
+
+.getInTouch {
+	width: calc(100% - 500px);
+	float: left;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.getInTouch h2 {
+	padding: 0;
+	margin: 0;
+}
+
+.getInTouch p {
+	font-size: 0.8rem;
+	color: rgb(163,163,163);
+	width: 90%;
+	margin: 0 auto;
+}
+
+.getInTouch h3 {
+	font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.getInTouch input, .getInTouch textarea {
+	width: 90%;
+	height: 5.5vh;
+	background: rgb(245, 245, 245);
+	border: none;
+}
+
+.getInTouch textarea {
+	height: 13vh;
+	max-width: 90%;
+	max-height: 15vh;
+}
+
+#submit {
+	width: 30%;
+	background: rgb(116, 166, 92);
+	text-transform: uppercase;
+	color: white;
+	font-size: 0.8rem;
+	margin-top: 3%;
+	line-height: 2.75vh;
+	transition: background 0.3s ease-in;
+}
+
+#submit:hover {
+	background: #557744;
+}
+
+/* FINAL CONTACT END */
+
+/* ****************** */
+/* CONTACT PAGE ENDS */
+/* **************** */
+
+
+/* ************** */
+/* MEDIA QUERIES */
+/* ************ */
+
+@media (min-width: 1600px) and (orientation: landscape)  {
+	.featuredRectangleRight {
+		width: calc(100% - 655px - 20px);
+	}
+} 
+
+@media (max-width: 1370px) {
+	#groupPlants {
+	    top: 270%;
+}
+}
+
+@media (max-width: 1130px) {
+	#groupPlants {
+	    top: 260%;
+	}
+
+	.dateDay {
+		font-size: 7rem;
+		top: -110%;
+	}
+
+	.aboutFullFrame {
+		background-position: 90%;
+	}
+}
+
+@media (max-width: 1100px) {
+
+	.featured {
+		height: 1500px;
+	}
+
+	.featuredRectangleLeft, .featuredRectangleRight {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.featuredRectangleRight {
+	    width: 464px;
+	}
+
+	#groupPlants {
+	    top: 314%;
+	    height: 330px;
+	    width: auto;
+	}
+
+	.midImage img {
+		padding: 11% 0;
+	}
+}
+
+@media (max-width: 1070px) {
+	#viewProducts {
+	    width: 20%;
+	}
+
+	.map {
+		text-align: center;
+	}
+
+	.map img {
+	    margin-bottom: 5%;
+	    float: none;
+	}
+
+	.getInTouch {
+		float: none;
+		width: 480px;
+	    margin: 0 auto;
+	}
+}
+
+@media (max-width: 960px) {
+	.headerLinksRight, .headerLinksLeft {
+		padding: 0 7%;
+	}
+
+	.dateDay {
+	    font-size: 5rem;
+	    top: -30%;
+	}
+}
+
+@media (max-width: 850px) {
+	#viewProducts, 	#seeAll {
+		width: 30%;
+	}
+
+	.date, .dateDay, .date h4 {
+		width: 100%;
+		text-align: center;
+	}
+
+	.dateDay {
+	    font-size: 7rem;
+	    margin: 0;
+	}
+
+	.date h4 {
+    margin-top: 12%;
+	}
+
+	.blogText {
+		width: 100%;
+	}
+
+	.footerSend {
+		width: 60%;
+	}
+}
+
+@media (max-width: 780px) {
+	.headerLinks li {
+		padding: 0 5px;
+	}
+
+	.navbar li {
+	    padding: 0px 5px;
+	}
+
+	.midImage img {
+	    padding: 18% 0;
+	}
+
+	.instagramFollow h2 {
+		top: -32%;
+	}
+
+	.instagramAddress h2 {
+		bottom: 98%;
+	    right: 9%;
+	}
+
+	.aboutFullFrame h2 {
+		font-size: 1rem;
+	}
+
+	.contaceInfoWrapper {
+		width: 101%;
+		margin: 0;
+	}
+
+	.contactEmail::after, .contactPhone::after {
+		background: transparent;
+	}
+}
+
+@media (max-width: 680px) {
+	.introImages {
+    width: 60%;
+    margin: 2% auto;
+    float: none;
+	}
+
+	.featuredList li {
+	    display: block;
+	    padding: 10px 15px;
+	}
+
+	#groupPlants {
+	    top: 390%;
+	    height: 260px;
+	    width: auto;
+	}
+
+	.promoContent {
+	    width: 50%;
+	}
+}
+
+@media (max-width: 650px) {
+	.vintage {
+		height: 33vh;
+	}
+
+	.vintageImage {
+		width: 33.3%;
+		margin: 0 auto;
+	}
+
+	.midImage img {
+	    padding: 22% 0;
+	}
+}
+
+
+@media (max-width: 600px) {
+	.headerLinksRight {
+		padding: 0 2% 0 1%;
+	}
+
+	.headerLinksLeft {
+		padding: 0 1% 0 2%;
+	}
+
+	/* .navbar {
+	    height: 10vh;
+	} */
+
+	.navbarFirstHalf, .navbarSecondHalf {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.headerLinks li {
+		padding: 0 15px;
+	}
+	
+}
+
+@media (max-width: 590px) {
+	.topNav {
+		height: 14vh;
+	}
+	
+	.headerLinksRight, .headerLinksLeft {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.headerLinks li {
+		padding: 0 15px;
+	}
+
+	.navbar li {
+		display: block;
+	}
+
+	#groupPlants {
+	    top: 421%;
+	    height: 280px;
+	    width: auto;
+	}
+
+	.footerAbout, .footerInformation, .footerSubscribe {
+		width: 90%;
+	}
+}
+
+@media (max-width: 570px) {
+	#viewProducts, 	#seeAll {
+		width: 50%;
+		display: block;
+		text-align: center;
+		margin: 2% auto;
+	}
+
+	.featuredRectangleLeft {
+		min-width: 300px;
+	}
+
+	.featuredRectangleLeft img {
+		    margin-bottom: 65%;
+	}
+
+	.featuredRectangleRight {
+	    width: 300px;
+	}
+
+	#recType {
+		background: white;
+		top: 30%;
+		font-size: 0.65rem;
+	}
+
+	#recPrice {
+	    top: 47%;
+	    line-height: 85px;
+	    background: white;
+	    height: 80px;
+	}
+
+	.blogLeft, .blogRight {
+		float: none;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.instagramFollow h2, .instagramAddress h2 {
+		display: none;
+	}
+
+	.contactInformationLinks {
+	    float: none;
+	    width: 80%;
+	    margin: 23% auto;
+	    height: 50%;
+	}
+
+	.getInTouch {
+		width: 90%;
+	}
+
+	#submit {
+		width: 55%;
+	}
+}
+
+@media (max-width: 510px) {
+	#groupPlants {
+	    top: 420%;
+	    height: 190px;
+	    width: auto;
+	}
+
+	.vintage {
+	    height: 40vh;
+	}
+
+	.vintageImage {
+	    width: 50%;
+	}
+
+	.midImage img {
+	    padding: 32% 0;
+	}
+
+	.aboutFullFrame h2 {
+		font-size: 0.75rem;
+	}
+}
+
+
+
+
